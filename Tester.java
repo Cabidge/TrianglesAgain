@@ -44,6 +44,11 @@ public class Tester {
         System.out.println(v.classify().equals("isosceles"));
         System.out.println(w.classify().equals("equilateral"));
 
+        // setVertex method
+        v.setVertex(2, new Point(0, Math.sqrt(5))); // Should now be a 3,3,4 triangle
+        System.out.println(v.classify().equals("isosceles"));
+        System.out.println(v.getPerimeter() == 10);
+
         // toStrings
         System.out.println("\ntoString methods:");
         System.out.println("Points:");

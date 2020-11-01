@@ -53,4 +53,18 @@ public class Triangle {
     public String toString() {
         return "v1 " + v1 + " v2 " + v2 + " v3 " + v3;
     }
+
+    public void setVertex(int index, Point newP) {
+        switch (index) {
+            case 0:
+                v1 = newP;
+                break;
+            case 1:
+                v2 = newP;
+                break;
+            case 2:
+                v3 = newP;
+                break;
+        }
+    }
 }
