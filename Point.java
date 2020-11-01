@@ -19,4 +19,8 @@ public class Point {
         double y = this.y - other.y;
         return Math.sqrt(x * x + y * y);
     }
+
+    public boolean equals(Point other) {
+        return (x == other.x && y == other.y);
+    }
 }
