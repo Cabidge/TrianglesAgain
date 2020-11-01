@@ -27,10 +27,21 @@ public class Tester {
         Triangle t = new Triangle(a,b,new Point(6,4)); // 3,4,5 triangle
         Triangle u = new Triangle(3,4, 6,8, 6,4); // Same triangle as above
 
+        Triangle v = new Triangle(-2,0, 2,0, 0,5); // isosceles
+        Triangle w = new Triangle(-1,0, 1,0, 0,Math.sqrt(3)); // equilateral
+
         // getPerimeter method
         System.out.println(t.getPerimeter() == 12);
         System.out.println(u.getPerimeter() == 12);
+
+        // getArea method
         System.out.println(t.getArea() == 6);
         System.out.println(u.getArea() == 6);
+
+        // classify method
+        System.out.println(t.classify().equals("scalene"));
+        System.out.println(u.classify().equals("scalene"));
+        System.out.println(v.classify().equals("isosceles"));
+        System.out.println(w.classify().equals("equilateral"));
     }
 }

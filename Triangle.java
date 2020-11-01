@@ -34,4 +34,19 @@ public class Triangle {
         double area = Math.sqrt(semiPerimeter * (semiPerimeter - sides[0]) * (semiPerimeter - sides[1]) * (semiPerimeter - sides[2]));
         return area;
     }
+
+    public String classify() {
+        double[] sides = getSides();
+        for (int i = 0; i < sides.length; i++) {
+            sides[i] = Math.round(sides[i] * 10000) / 10000.0;
+        }
+
+        if (sides[0] == sides[1] && sides[1] == sides[2]) {
+            return "equilateral";
+        }
+        if (sides[0] == sides[1] || sides[1] == sides[2] || sides[2] == sides[0]) {
+            return "isosceles";
+        }
+        return "scalene";
+    }
 }
