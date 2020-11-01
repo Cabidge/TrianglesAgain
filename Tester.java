@@ -26,5 +26,9 @@ public class Tester {
         // Triangles
         Triangle t = new Triangle(a,b,new Point(6,4)); // 3,4,5 triangle
         Triangle u = new Triangle(3,4, 6,8, 6,4); // Same triangle as above
+
+        // getPerimeter method
+        System.out.println(t.getPerimeter() == 12);
+        System.out.println(u.getPerimeter() == 12);
     }
 }
