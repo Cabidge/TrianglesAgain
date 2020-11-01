@@ -27,4 +27,11 @@ public class Triangle {
         double[] sides = getSides();
         return sides[0] + sides[1] + sides[2];
     }
+
+    public double getArea() {
+        double[] sides = getSides();
+        double semiPerimeter = getPerimeter()/2;
+        double area = Math.sqrt(semiPerimeter * (semiPerimeter - sides[0]) * (semiPerimeter - sides[1]) * (semiPerimeter - sides[2]));
+        return area;
+    }
 }

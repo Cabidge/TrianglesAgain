@@ -30,5 +30,7 @@ public class Tester {
         // getPerimeter method
         System.out.println(t.getPerimeter() == 12);
         System.out.println(u.getPerimeter() == 12);
+        System.out.println(t.getArea() == 6);
+        System.out.println(u.getArea() == 6);
     }
 }
