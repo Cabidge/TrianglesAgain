@@ -43,5 +43,14 @@ public class Tester {
         System.out.println(u.classify().equals("scalene"));
         System.out.println(v.classify().equals("isosceles"));
         System.out.println(w.classify().equals("equilateral"));
+
+        // toStrings
+        System.out.println("\ntoString methods:");
+        System.out.println("Points:");
+        System.out.println(p);
+        System.out.println(q);
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
     }
 }
