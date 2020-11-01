@@ -22,5 +22,9 @@ public class Tester {
         System.out.println(p.equals(q));
         System.out.println(!p.equals(a));
         System.out.println(a.equals(c));
+
+        // Triangles
+        Triangle t = new Triangle(a,b,new Point(6,4)); // 3,4,5 triangle
+        Triangle u = new Triangle(3,4, 6,8, 6,4); // Same triangle as above
     }
 }
