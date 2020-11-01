@@ -52,5 +52,11 @@ public class Tester {
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
+
+        System.out.println("\nTriangles:");
+        System.out.println(t);
+        System.out.println(u);
+        System.out.println(v);
+        System.out.println(w);
     }
 }
