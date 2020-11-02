@@ -6,6 +6,11 @@ public class Point {
         y = Y;
     }
 
+    public Point(Point p) {
+        x = p.x;
+        y = p.y;
+    }
+
     public double getX() {
         return x;
     }
